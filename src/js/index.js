@@ -80,8 +80,7 @@ function createGalleryMarkup(hits) {
               <b>Downloads:</b> ${img.downloads}
             </p>
           </div>
-        </div>
-        `;
+        </div>`;
     })
     .join('');
 }
