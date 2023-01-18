@@ -53,6 +53,7 @@ function onLoadMore(e) {
       );
       if (data.totalHits / (api.perPage * api.page) < 1) {
         refs.loadMoreEl.style.display = 'none';
+        Notiflix.Notify.info("We're sorry, but you've reached the end of search results.");
       }
     })
     .catch(error => {
